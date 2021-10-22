@@ -30,7 +30,8 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 40%;
+    margin: .4rem;
 }
 
 .nav-links li {
@@ -62,6 +63,7 @@ nav {
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 60%;
+        margin: 0px;
     }
 }
 
@@ -81,6 +83,7 @@ nav {
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        margin: 0px;
     }
     .nav-links li {
         opacity: 0;

@@ -1,5 +1,24 @@
 .logo img {
     height: 50px;
-    margin-top: .4rem;
-    margin-left: .4rem;
+    margin: .4rem;
+}
+
+.btn-resume {
+    background: #fff;
+    padding: 0.1rem 1rem;
+    border: none;
+    border-radius: 3px;
+    color: var(--space-blue);
+    transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .btn-resume {
+        padding: 0.3rem 1rem;
+    }
 }
