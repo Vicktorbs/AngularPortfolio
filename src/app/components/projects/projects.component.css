@@ -1,0 +1,17 @@
+.links-btn {
+    border: 1px solid var(--space-blue);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.technology-btn {
+    font-size: 0.9rem;
+    color: rgb(73, 72, 72);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--base-red);
+}
+
+.img-link {
+    height: 1.2rem;
+}

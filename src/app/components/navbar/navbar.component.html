@@ -1,23 +1,23 @@
-<nav class="sticky-top">
+<nav>
     <div class="logo">
         <img src="../../../assets/img/Logo.png" alt="Victor Logo">
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#">About me</a>
+            <a href="#about-me" (click)="navSlice()">About me</a>
         </li>
         <li>
-            <a href="#">Projects</a>
+            <a href="#projects" (click)="navSlice()">Projects</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="#contact-me" (click)="navSlice()">Contact</a>
         </li>
         <li>
             <button class="btn-resume">Resume</button>
         </li>
     </ul>
     <!-- Burger menu -->
-    <div class="burger">
+    <div class="burger" (click)="navSlice()">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>

@@ -7,32 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  nav: any;
+  burger: any;
+  navLinks: any;
+
   constructor() {
   }
   
   ngOnInit(): void {
-    this.navSlice();
+    // this.navSlice();
+    this.burger = document.querySelector('.burger');
+    this.nav = document.querySelector('.nav-links');
+    this.navLinks = document.querySelectorAll('.nav-links li');
   }
-
+  
   navSlice() {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    
-    burger?.addEventListener('click', () => {
-      // Toggle Nav
-      nav?.classList.toggle('nav-active');
-      // Animate Links
-      navLinks.forEach((link: any, index) => {
-        if (link.style.animation) {
-          link.style.animation = '';
-        } else {
-          link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.7}s`;
-        }
-      })
-      // Burger Animation
-      burger.classList.toggle('toggle');
-    });
+    this.nav?.classList.toggle('nav-active');
+    // Animate Links
+    this.navLinks.forEach((link: any, index: any) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${ index / 7 + 0.7}s`;
+      }
+    })
+    // Burger Animation
+    this.burger.classList.toggle('toggle');
   }
 
 }
