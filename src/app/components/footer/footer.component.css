@@ -1,5 +1,11 @@
 .footer {
+    z-index: -1;
+    color: #fff;
     background-color: var(--space-blue);
     height: 20vh;
     clip-path: polygon(0 65%, 100% 0, 100% 100%, 0% 100%);
+}
+
+p {
+    padding-top: 15vh;
 }
