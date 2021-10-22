@@ -13,7 +13,7 @@
 }
 
 .btn-resume:hover {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 

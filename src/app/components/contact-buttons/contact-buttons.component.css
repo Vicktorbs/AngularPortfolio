@@ -1,0 +1,12 @@
+img {
+    height: 2rem;
+}
+
+a {
+    border: 1px solid var(--space-blue);
+}
+
+a:hover {
+    border: 1px solid var(--space-blue);
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.2);
+}

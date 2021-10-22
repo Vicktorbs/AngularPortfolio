@@ -1,1 +1,10 @@
-<p>contact-buttons works!</p>
+<div class="mt-4">
+    <a *ngFor="let contac of contacts" 
+        [href]="contac.url" 
+        class="btn btn-light m-3"
+        target="_blank"
+        rel="noopener noreferrer">
+        <img [src]="contac.icon" [alt]="contac.contactMessage">
+    </a>
+    
+</div>
