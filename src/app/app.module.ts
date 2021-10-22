@@ -3,10 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactButtonsComponent } from './components/contact-buttons/contact-buttons.component';
+import { ContactAreaComponent } from './components/contact-area/contact-area.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPageComponent,
+    NavbarComponent,
+    HeroComponent,
+    ProjectsComponent,
+    ContactButtonsComponent,
+    ContactAreaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
