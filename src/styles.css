@@ -11,6 +11,21 @@
     font-family: 'Fira Code', monospace;
 }
 
+.font-headers {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.font-content {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.font-super {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -43,7 +58,6 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
 }
 
 .burger {
@@ -68,6 +82,21 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+
+    .font-headers {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .font-content {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .font-super {
+        font-size: 25px;
+        font-weight: bold;
+    }
     body {
         overflow-x: hidden;
     }
@@ -77,6 +106,7 @@ nav {
         height: 92vh;
         top: 8vh;
         background-color: var(--space-blue);
+        /* filter: brightness(90%); */
         display: flex;
         flex-direction: column;
         align-items: center;

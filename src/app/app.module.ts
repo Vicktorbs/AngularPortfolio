@@ -9,7 +9,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactButtonsComponent } from './components/contact-buttons/contact-buttons.component';
 import { ContactAreaComponent } from './components/contact-area/contact-area.component';
-import { FooterComponent } from './component/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [

@@ -22,3 +22,7 @@
         padding: 0.3rem 1rem;
     }
 }
+
+nav {
+    border-bottom: 0.01rem solid #0e152b;
+}

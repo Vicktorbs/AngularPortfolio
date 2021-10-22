@@ -1,0 +1,12 @@
+.hero {
+    position: relative;
+    z-index: -1;
+    height: 110vh;
+    color: #fff;
+    background: var(--space-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.hero-container {
+    padding-top: 12vh;
+}
