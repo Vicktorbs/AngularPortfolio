@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TooltipComponent } from "@angular/material/tooltip";
 
 @Component({
   selector: 'app-contact-buttons',
@@ -9,7 +10,7 @@ export class ContactButtonsComponent implements OnInit {
 
   contacts = [
     {
-      contactMessage: "Write me a mail",
+      contactMessage: "Mail me",
       icon: "/assets/icons/mail.svg",
       url: "mailto:viktorb.132@gmail.com",
     },
