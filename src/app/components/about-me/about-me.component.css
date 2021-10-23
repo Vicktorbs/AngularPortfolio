@@ -1,0 +1,46 @@
+/* #profile-picture-cotainer {
+    background-image: url('/assets/img/profilebackgrond-full.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    background: #F02D3A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 78px;
+    transform: matrix(0.95, 0.28, -0.32, 0.96, 0, 0);
+}
+
+#profile-picture {
+}   */
+
+/* 
+background red
+
+position: absolute;
+width: 315.74px;
+height: 271.45px;
+left: 990.69px;
+top: 1285px;
+
+background: #F02D3A;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 78px;
+transform: matrix(0.95, 0.28, -0.32, 0.96, 0, 0) */
+
+
+
+/* border
+
+position: absolute;
+width: 321.95px;
+height: 276.79px;
+left: 992.22px;
+top: 1285px;
+
+/* Yellow 
+
+border: 1px solid #EEA243;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 78px;
+transform: matrix(0.95, 0.28, -0.32, 0.96, 0, 0); */
