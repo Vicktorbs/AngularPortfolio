@@ -9,3 +9,9 @@
 p {
     padding-top: 15vh;
 }
+@media (max-width: 640px) {
+    p {
+        padding-top: 12vh;
+        font-size: .8rem;
+    }
+}
