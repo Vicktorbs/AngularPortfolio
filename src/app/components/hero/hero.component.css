@@ -1,19 +1,49 @@
 .hero {
-    /* position: relative; */
     z-index: -1;
-    height: 110vh;
+    height: 95vh;
     color: #fff;
     background: var(--space-blue);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
 .hero-container {
-    padding-top: 12vh;
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
+.font-headers {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
 .name-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     display: grid;
     place-items: left;
+}
+
+.first-description {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.contact-buttons {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.font-super {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .typing-effect {
@@ -25,6 +55,32 @@
     border-right: 3px solid;
 }
 
+#profile-picture-cotainer {
+    transition: filter 1s;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.img-profile-box {
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 20px;
+    filter: grayscale(0.9);
+    background: #F02D3A;
+}
+
+.img-profile-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-profile-box:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
 @keyframes typing {
     from {
         width: 0;
@@ -34,5 +90,49 @@
 @keyframes blink {
     50% {
         border-color: transparent;
+    }
+}
+
+@media (max-width: 992px) {
+    .font-super {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .hero-container {
+        padding-top: 3vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #profile-picture-cotainer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: grid;
+    }
+    #profile-picture-cotainer .img-profile-box {
+        width: 50%;
+        place-self: center;
+    }
+    .greet {
+        margin-top: 2rem;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .name-wrapper {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .first-description {
+        padding: .3rem;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .contact-buttons {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        width: max-content;
     }
 }

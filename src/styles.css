@@ -21,11 +21,6 @@
     font-weight: bold;
 }
 
-.font-super {
-    font-size: 5rem;
-    font-weight: bold;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -94,12 +89,9 @@ nav {
     }
 
     .font-super {
-        font-size: 25px;
+        font-size: 1.3rem !important;
         font-weight: bold;
     }
-    /* body {
-        overflow-x: hidden;
-    } */
     .nav-links {
         position: absolute;
         right: 0px;
