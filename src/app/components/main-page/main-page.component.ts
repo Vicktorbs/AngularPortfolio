@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguajeService } from 'src/app/services/languaje.service';
 
 @Component({
   selector: 'app-main-page',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private languajeService: LanguajeService) { }
 
   ngOnInit(): void {
+    const lang = this.languajeService.getlanguaje();
+    console.log(lang);
   }
 
 }
