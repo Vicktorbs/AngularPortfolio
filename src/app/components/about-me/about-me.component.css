@@ -1,16 +1,22 @@
 #profile-picture-cotainer {
-    background-image: url('/assets/img/VictorBolaosSolis-filter-picture.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    height: 30vh;
-    padding-top: 50vh;
-    transition: all 0.3s ease;
+    transition: filter 1s;
 }
 
-#profile-picture-cotainer:hover {
-    background-image: url('/assets/img/VictorBolaosSolis-normal-picture.png');
+.img-profile-box {
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 20px;
+    filter: grayscale(0.9);
+    background: #F02D3A;
+}
+
+.img-profile-box img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.img-profile-box:hover {
+    filter: grayscale(0);
     transform: scale(1.1);
 }
 
