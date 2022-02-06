@@ -96,8 +96,14 @@
 }
 
 @media (max-width: 992px) {
+    .font-headers {
+        font-size: 1.4rem;
+    }
     .font-super {
-        font-size: 2.3rem;
+        font-size: 1.6rem;
+    }
+    .font-content {
+        font-size: 1.4rem;
     }
 }
 
@@ -118,8 +124,8 @@
         width: 50%;
         place-self: center;
     }
-    .greet {
-        margin-top: 2rem;
+    #greet {
+        /* margin-top: 2rem; */
         grid-row-start: 2;
         grid-row-end: 3;
     }
