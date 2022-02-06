@@ -7,23 +7,29 @@
             <mat-slide-toggle [(ngModel)]="languajeBrowser">
                 <p *ngIf="languajeBrowser">Español</p>
                 <p *ngIf="!languajeBrowser">English</p>
-            </mat-slide-toggle>-->
+            </mat-slide-toggle>
         </li>
         <li>
-            <a href="#about-me" (click)="navSlice()">About me</a>
+            <a href="#about-me" (click)="navSlice()">
+                {{ (languajeBrowser) ? 'Sobre mi' : 'About me'}}
+            </a>
         </li>
         <li>
-            <a href="#projects" (click)="navSlice()">Projects</a>
+            <a href="#projects" (click)="navSlice()">
+                {{ (languajeBrowser) ? 'Proyectos' : 'Projects'}}
+            </a>
         </li>
         <li>
-            <a href="#contact-me" (click)="navSlice()">Contact</a>
+            <a href="#contact-me" (click)="navSlice()">
+                {{ (languajeBrowser) ? 'Contacto' : 'Contact'}}
+            </a>
         </li>
         <li id="resume-contiainer">
             <a href="/assets/files/Victor Bolanos Solis Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn-resume">
-                Resume
+                {{ (languajeBrowser) ? 'Curriculum' : 'Resume'}}
             </a>
         </li>
     </ul>
