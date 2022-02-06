@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguajeService } from 'src/app/services/languaje.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,17 +11,21 @@ export class NavbarComponent implements OnInit {
   nav: any;
   burger: any;
   navLinks: any;
+  languajeBrowser: boolean = false;
+  isChecked = false;
 
-  constructor() {
+  constructor(private languajeService: LanguajeService) {
   }
-  
+
   ngOnInit(): void {
     // this.navSlice();
     this.burger = document.querySelector('.burger');
     this.nav = document.querySelector('.nav-links');
     this.navLinks = document.querySelectorAll('.nav-links li');
+    this.languajeBrowser = this.languajeService.getlanguaje();
+    console.log('languaje ', this.languajeBrowser);
   }
-  
+
   navSlice() {
     this.nav?.classList.toggle('nav-active');
     // Animate Links
