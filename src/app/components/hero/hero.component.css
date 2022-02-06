@@ -65,20 +65,22 @@
 
 .img-profile-box {
     transition: all 0.3s ease;
-    position: relative;
-    border-radius: 20px;
-    filter: grayscale(0.9);
     background: #F02D3A;
+    border-radius: 70px;
 }
 
 .img-profile-box img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 70px;
+    filter: grayscale(0.9);
 }
 
 .img-profile-box:hover {
-    filter: grayscale(0);
     transform: scale(1.1);
+}
+
+.img-profile-box:hover img {
+    filter: grayscale(0);
 }
 
 @keyframes typing {
@@ -94,8 +96,14 @@
 }
 
 @media (max-width: 992px) {
+    .font-headers {
+        font-size: 1.4rem;
+    }
     .font-super {
-        font-size: 2.3rem;
+        font-size: 1.6rem;
+    }
+    .font-content {
+        font-size: 1.4rem;
     }
 }
 
@@ -116,8 +124,8 @@
         width: 50%;
         place-self: center;
     }
-    .greet {
-        margin-top: 2rem;
+    #greet {
+        /* margin-top: 2rem; */
         grid-row-start: 2;
         grid-row-end: 3;
     }
