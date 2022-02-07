@@ -1,6 +1,7 @@
 .links-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 20%);
+    grid-template-columns: repeat(5, 8rem);
+    gap: 1fr
 }
 
 img {
