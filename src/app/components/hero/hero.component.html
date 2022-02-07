@@ -1,7 +1,7 @@
 <div class="hero">
     <div class="container hero-container">
         <p class="font-headers" id="greet">
-            Hello, my name is
+            {{ (languajeBrowser)? data.esp.greet: data.english.greet}}
         </p>
         <div class="name-wrapper">
             <h2 class="font-super typing-effect">
@@ -9,7 +9,7 @@
             </h2>
         </div>
         <p class="font-content first-description">
-            I’m a web developer from CDMX, Mexico. With a creative mindset and passion for learning and innovating. I’m specializing in building(and occasionally designing).
+            {{ (languajeBrowser)? data.esp.description: data.english.description}}
         </p>
         <app-contact-buttons class="contact-buttons"></app-contact-buttons>
         <div id="profile-picture-cotainer">

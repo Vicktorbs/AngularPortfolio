@@ -2,13 +2,13 @@
     <div class="row">
         <div class="col-lg-12 mt-12 mb-12">
             <h4 class="font-headers">
-                About me
+                {{ (languajeBrowser)? data.esp.title: data.english.title}}
             </h4>
             <p class="font-content mt-4">
-                I’m a Computer Systems Engineer, I got my degree in May 2021, and during my career, I focused on web development using the stack MEAN to become a Full-Stack developer.
+                {{ (languajeBrowser)? data.esp.text1: data.english.text1}}
             </p>
             <p class="font-content mt-4">
-                I’ve been working recently with technologies like Python, React, Svelte, NodeJs, MySQL, MongoDB, Angular5+, Express, HTML, CSS, Git, and Figma.
+                {{ (languajeBrowser)? data.esp.text2: data.english.text2}}
             </p>
         </div>
     </div>

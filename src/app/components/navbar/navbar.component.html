@@ -4,7 +4,7 @@
     </div>
     <ul class="nav-links">
         <li>
-            <mat-slide-toggle [(ngModel)]="languajeBrowser">
+            <mat-slide-toggle [(ngModel)]="languajeBrowser" (click)="changeLanguaje()">
                 <p *ngIf="languajeBrowser">Español</p>
                 <p *ngIf="!languajeBrowser">English</p>
             </mat-slide-toggle>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguajeService } from 'src/app/services/languaje.service';
 
 @Component({
   selector: 'app-hero',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  languajeBrowser: boolean = false;
+  data = {
+    english: {
+      greet: 'Hello, my name is' ,
+      description: 'I’m a web developer from CDMX, México. With a creative mindset and passion for learning and innovating. One of the things I love the most is building web interfaces(and occasionally designing it).'
+    },
+    esp: {
+      greet: 'Hola, mi nombre es' ,
+      description: 'Soy un desarrollador web de CDMX, México. Con una mentatlida creativa y apasionado por aprender he inovar. Me apaciona la contruccion de interfaces web (y ocacionalmente diseñarlas)'
+    }
+  }
+
+  constructor(private languajeService: LanguajeService) { }
 
   ngOnInit(): void {
+    this.languajeBrowser = this.languajeService.lang;
+    this.languajeService.languajeObservable.subscribe(response => {
+      this.languajeBrowser = response;
+    })
   }
 
 }

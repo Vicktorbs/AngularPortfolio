@@ -10,9 +10,6 @@ export class MainPageComponent implements OnInit {
 
   constructor(private languajeService: LanguajeService) { }
 
-  ngOnInit(): void {
-    const lang = this.languajeService.getlanguaje();
-    console.log(lang);
-  }
+  ngOnInit(): void {}
 
 }

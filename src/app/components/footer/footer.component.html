@@ -1,7 +1,9 @@
 <div class="footer">
     <div class="container mb-0">
         <div class="col-12">
-            <p class="w-100 text-center">Designed & Built by Víctor Bolaños Solís</p>
+            <p class="w-100 text-center">
+                {{ (languajeBrowser)? data.esp.description: data.english.description}}
+            </p>
         </div>
     </div>
 </div>

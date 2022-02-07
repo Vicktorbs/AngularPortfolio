@@ -10,7 +10,7 @@ export class ContactButtonsComponent implements OnInit {
 
   contacts = [
     {
-      contactMessage: "Mail me",
+      contactMessage: "Mail",
       icon: "/assets/icons/mail.svg",
       url: "mailto:viktorb.132@gmail.com",
     },

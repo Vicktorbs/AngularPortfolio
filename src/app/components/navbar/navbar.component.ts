@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit {
   burger: any;
   navLinks: any;
   languajeBrowser: boolean = false;
-  isChecked = false;
 
   constructor(private languajeService: LanguajeService) {
   }
@@ -22,8 +21,7 @@ export class NavbarComponent implements OnInit {
     this.burger = document.querySelector('.burger');
     this.nav = document.querySelector('.nav-links');
     this.navLinks = document.querySelectorAll('.nav-links li');
-    this.languajeBrowser = this.languajeService.getlanguaje();
-    console.log('languaje ', this.languajeBrowser);
+    this.languajeBrowser = this.languajeService.lang;
   }
 
   navSlice() {
@@ -40,4 +38,7 @@ export class NavbarComponent implements OnInit {
     this.burger.classList.toggle('toggle');
   }
 
+  changeLanguaje() {
+    this.languajeService.setlanguaje();
+  }
 }

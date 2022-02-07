@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12">
             <h4 class="font-headers">
-                Some things I’ve built
+                {{ (languajeBrowser)? data.esp.title: data.english.title}}
             </h4>
         </div>
     </div>
@@ -13,32 +13,32 @@
         </div>
         <div class="col-lg-5 order-md-1">
             <h6 class="font-headers mb-2">
-                GifFinderApp
+                {{ (languajeBrowser)? data.esp.proyects[0].title: data.english.proyects[0].title}}
             </h6>
             <hr>
             <div class="mb-4">
                 <button href="" class="btn btn-light technology-btn mr-to-right">
-                    React
+                    {{ (languajeBrowser)? data.esp.proyects[0].tecs[0]: data.english.proyects[0].tecs[0]}}
                 </button>
                 <button href="" class="btn btn-light technology-btn">
-                    Giphy API
+                    {{ (languajeBrowser)? data.esp.proyects[0].tecs[1]: data.english.proyects[0].tecs[1]}}
                 </button>
             </div>
             <p class="font-content">
-                Using react hooks and consuming the API of Giphy I built an app to let the user search gifs. The app returns a certain amount of results and keeps the oldest results.
+                {{ (languajeBrowser)? data.esp.proyects[0].desc: data.english.proyects[0].desc}}
             </p>
             <a href="https://github.com/Vicktorbs/gif-finder-app"
                 class="btn btn-light links-btn mr-to-right"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img src="/assets/icons/github.svg" alt="GitHub link" class="img-link">
-                View code
+                {{ (languajeBrowser)? data.esp.proyects[0].codeLink: data.english.proyects[0].codeLink}}
             </a>
             <a href="https://vicktorbs.github.io/gif-finder-app/"
                 class="btn btn-light links-btn"
                 target="_blank"
                 rel="noopener noreferrer">
-                Try it
+                {{ (languajeBrowser)? data.esp.proyects[0].deployLink: data.english.proyects[0].deployLink}}
             </a>
         </div>
     </div>
@@ -49,29 +49,29 @@
         </div>
         <div class="col-lg-5">
             <h6 class="font-headers mb-2">
-                Fight-App
+                {{ (languajeBrowser)? data.esp.proyects[1].title: data.english.proyects[1].title}}
             </h6>
             <hr>
             <div class="mb-4">
                 <button href="" class="btn btn-light technology-btn">
-                    Angular
+                    {{ (languajeBrowser)? data.esp.proyects[1].tecs[0]: data.english.proyects[1].tecs[0]}}
                 </button>
             </div>
             <p class="font-content">
-                It’s a simple web game for two players where users can choose a character from Marvel or DC to fight. The game includes the actions to attack, recovery, and special attack.
+                {{ (languajeBrowser)? data.esp.proyects[1].desc: data.english.proyects[1].desc}}
             </p>
             <a href="https://github.com/Vicktorbs/fight-game-angular"
                 class="btn btn-light links-btn mr-to-right"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img src="/assets/icons/github.svg" alt="GitHub link" class="img-link">
-                View code
+                {{ (languajeBrowser)? data.esp.proyects[1].codeLink: data.english.proyects[1].codeLink}}
             </a>
             <a href="https://vicktorbs.github.io/fight-game-angular/"
                 class="btn btn-light links-btn"
                 target="_blank"
                 rel="noopener noreferrer">
-                Try it
+                {{ (languajeBrowser)? data.esp.proyects[1].codeLink: data.english.proyects[1].deployLink}}
             </a>
         </div>
     </div>
@@ -82,29 +82,29 @@
         </div>
         <div class="col-lg-5 order-md-1">
             <h6 class="font-headers mb-2">
-                React-Shop
+                {{ (languajeBrowser)? data.esp.proyects[2].title: data.english.proyects[2].title}}
             </h6>
             <hr>
             <div class="mb-4">
                 <button href="" class="btn btn-light technology-btn">
-                    React (Hooks)
+                    {{ (languajeBrowser)? data.esp.proyects[2].tecs[0]: data.english.proyects[2].tecs[0]}}
                 </button>
             </div>
             <p class="font-content">
-                Reject-shop uses hooks to share information between its components, and copy the common behavior in an e-commerce site
+                {{ (languajeBrowser)? data.esp.proyects[2].desc: data.english.proyects[2].desc}}
             </p>
             <a href="https://github.com/Vicktorbs/react-shop"
                 class="btn btn-light links-btn mr-to-right"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img src="/assets/icons/github.svg" alt="GitHub link" class="img-link">
-                View code
+                {{ (languajeBrowser)? data.esp.proyects[0].codeLink: data.english.proyects[2].codeLink}}
             </a>
             <a href="https://vicktorbs.github.io/react-shop/"
                 class="btn btn-light links-btn"
                 target="_blank"
                 rel="noopener noreferrer">
-                Try it
+                {{ (languajeBrowser)? data.esp.proyects[0].codeLink: data.english.proyects[2].deployLink}}
             </a>
         </div>
     </div>
@@ -127,7 +127,7 @@
                 Ludus is an educational prototype.
                 This tool is focused on bringing support to primary students in topics that they need help with. The main range of the app was children between 8-12 years old.
             </p>
-            <a href="https://github.com/Vicktorbs/ludus" 
+            <a href="https://github.com/Vicktorbs/ludus"
                 class="btn btn-light links-btn"
                 target="_blank"
                 rel="noopener noreferrer">

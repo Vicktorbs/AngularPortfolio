@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LanguajeService } from './services/languaje.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatTooltipModule,
     MatSlideToggleModule
   ],
-  providers: [],
+  providers: [LanguajeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
