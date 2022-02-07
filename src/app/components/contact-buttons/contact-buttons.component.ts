@@ -29,6 +29,11 @@ export class ContactButtonsComponent implements OnInit {
       icon: "/assets/icons/twitter.svg",
       url: "https://twitter.com/Viktor_b_Sq",
     },
+    {
+      contactMessage: "Platzi",
+      icon: "/assets/icons/platzy-logo.png",
+      url: "https://platzi.com/p/viktor-bs/",
+    },
   ];
 
   constructor() { }
