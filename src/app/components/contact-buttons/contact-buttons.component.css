@@ -21,4 +21,9 @@ a:hover {
     img {
         height: .9rem;
     }
+    .links-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 4.5rem);
+        gap: 1fr
+    }
 }

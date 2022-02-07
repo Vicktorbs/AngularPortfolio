@@ -76,6 +76,7 @@
 }
 
 .img-profile-box:hover {
+    background: #cf8c8e;
     transform: scale(1.1);
 }
 
