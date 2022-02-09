@@ -42,21 +42,21 @@ export class ProjectsComponent implements OnInit {
         {
           title: 'GifFinderApp',
           tecs: ['React', 'Giphy API'],
-          desc: 'Usando los react hooks y consumiendo el API de Giphy contrui una aplicacion, que permite a los usuarios buscar gifs y obtener 8 resultados. La aplicacion mantiene un historial de lo que se ha buscado.',
+          desc: 'Usando los react hooks y consumiendo el API de Giphy construir una aplicación, que permite a los usuarios buscar gifs y obtener 8 resultados. La aplicación mantiene un historial de lo que se ha buscado.',
           codeLink: 'Ver el código',
           deployLink: 'Probarlo'
         },
         {
           title: 'Fight-App',
           tecs: ['Angular'],
-          desc: 'Es un juego web sencillo para dos jugadores, donde cada uno puede elegir un personaje de Marvel o DC y tener un "pelea". El juego incluye tres acciones: atacar, recuperarse y un ataque especial.',
+          desc: 'Es un juego web sencillo para dos jugadores, donde cada uno puede elegir un personaje de Marvel o DC y tener una "pelea". El juego incluye tres acciones: atacar, recuperarse y un ataque especial.',
           codeLink: 'Ver el código',
           deployLink: 'Probarlo'
         },
         {
           title: 'React-Shop',
           tecs: ['React (Hooks)'],
-          desc: 'Reject-shop utiliza hooks para compartir informacion entre sus componentes, y replica el carrito de compras de un e-comerce',
+          desc: 'React-Shop utiliza hooks para compartir información entre sus componentes, y replica el carrito de compras de un ecommerce',
           codeLink: 'Ver el código',
           deployLink: 'Probarlo'
         }

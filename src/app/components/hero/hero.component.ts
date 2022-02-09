@@ -16,7 +16,7 @@ export class HeroComponent implements OnInit {
     },
     esp: {
       greet: 'Hola, mi nombre es' ,
-      description: 'Soy un desarrollador web de CDMX, México. Con una mentatlida creativa y apasionado por aprender he inovar. Me apaciona la contruccion de interfaces web (y ocacionalmente diseñarlas)'
+      description: 'Soy un desarrollador web de CDMX, México. Con una mentalidad creativa y apasionado por aprender e innovar. Me apasiona la construcción de interfaces web (y ocasionalmente diseñarlas).'
     }
   }
 

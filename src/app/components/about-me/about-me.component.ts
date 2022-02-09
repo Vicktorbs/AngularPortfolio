@@ -17,8 +17,8 @@ export class AboutMeComponent implements OnInit {
     },
     esp: {
       title: 'Sobre mi',
-      text1: 'Soy un Ingeniero en Sistemas Computacionales. Me gradue en Mayo del 2021, y mientras cursaba la carrera me enfoque en el desarrollo web con el stack MEAN para volverme un desarrollador Full-Stack',
-      text2: 'Tengo experiencia utilizando herramientas como Python, React, Svelte, NodeJs, MySQL, MongoDB, Angular5+, Express, HTML, CSS, Git, and Figma.'
+      text1: 'Soy Ingeniero en Sistemas Computacionales. Me gradué en Mayo del 2021, y mientras cursaba la carrera me enfoque en el desarrollo web con el stack MEAN para volverme un desarrollador Full-Stack.',
+      text2: 'Tengo experiencia utilizando herramientas como Python, React, Svelte, Node Js, MySQL, MongoDB, Angular5+, Express, HTML, CSS, Git, and Figma.'
     }
   }
 

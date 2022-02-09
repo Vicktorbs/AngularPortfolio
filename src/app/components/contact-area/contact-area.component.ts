@@ -16,7 +16,7 @@ export class ContactAreaComponent implements OnInit {
     },
     esp: {
       title: 'Contactar' ,
-      description: 'Si tienen alguna pregunta o quieres contactarme para algun proyecto mi puedes contactarme. Intentare respondes de la mejor manera. Siéntase libre de enviarme un correo electrónico sobre cualquier actualización de trabajo relevante o comuníquese con una de mis redes sociales.'
+      description: 'Si tienen alguna pregunta o quieren contactarme para algún proyecto mi pueden contactarme. Intentaré responder de la mejor manera. Siéntase libre de enviarme un correo electrónico sobre cualquier actualización de trabajo relevante o comuníquese con una de mis redes sociales.'
     }
   }
 
