@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
 import { MainPageComponent } from './components/main-page/main-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -11,10 +16,8 @@ import { ContactButtonsComponent } from './components/contact-buttons/contact-bu
 import { ContactAreaComponent } from './components/contact-area/contact-area.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { TechnoloyIconComponent } from './components/technoloy-icon/technoloy-icon.component';
+
 import { LanguajeService } from './services/languaje.service';
 
 @NgModule({
@@ -27,7 +30,8 @@ import { LanguajeService } from './services/languaje.service';
     ContactButtonsComponent,
     ContactAreaComponent,
     FooterComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    TechnoloyIconComponent
   ],
   imports: [
     FormsModule,
